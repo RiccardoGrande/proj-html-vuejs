@@ -65,9 +65,13 @@ export default {
                 <div class="col-4 d-flex align-items-center justify-content-center">
                     <img class="logo" src="/fable/images/logo.png" alt="fable_logo">
                 </div>
-                <div class="col d-flex flex-column align-items-center justify-content-center" v-for="item in banner">
-                    <img class="icon" :src="item.image">
-                    <span>{{ item.text }}</span>
+                <div class="col-6 d-flex">
+                    <div class="col d-flex flex-column align-items-center justify-content-center" v-for="item in banner">
+                        <img class="icon" :src="item.image">
+                        <span>{{ item.text }}</span>
+
+                    </div>
+
 
                 </div>
 
@@ -85,9 +89,14 @@ export default {
     height: 100px;
 }
 
+.col {
+    padding: 0;
+}
+
 .icon {
     height: 30px;
     width: 30px;
+
 }
 
 span {
