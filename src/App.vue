@@ -15,4 +15,11 @@ export default {
   <AppHeader></AppHeader>
 </template>
 
-<style scoped></style>
+<style scoped>
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+</style>

@@ -61,7 +61,7 @@ export default {
 <template>
     <section>
         <div class="container">
-            <div class="row p-1">
+            <div class="row p-2">
                 <div class="col-4 d-flex align-items-center justify-content-center">
                     <img class="logo" src="/fable/images/logo.png" alt="fable_logo">
                 </div>
