@@ -18,7 +18,7 @@ export default {
   <AppMain></AppMain>
 </template>
 
-<style scoped>
+<style >
 * {
   padding: 0;
   margin: 0;
