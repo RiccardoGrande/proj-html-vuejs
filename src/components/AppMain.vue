@@ -69,9 +69,12 @@ export default {
 
             ],
             activeImage: 0,
-            images: ['fable/images/gallery_01.jpg',
-                'fable/images/gallery_07.jpg',
-                'fable/images/gallery_08.jpg'],
+            images: {
+                image: ['/fable/images/gallery_01.jpg',
+                    '/fable/images/gallery_07.jpg',
+                    '/fable/images/gallery_08.jpg'],
+
+            }
 
         }
 
@@ -131,7 +134,7 @@ export default {
             <div class="row ">
                 <div class="col" v-for="item in cards">
                     <div class="card text-center">
-                        <img :src="item.image" class="card-img-top" alt="...">
+                        <img :src="item.image" class="card-img-top cardz" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">{{ item.title }}</h5>
                             <p class="card-text">{{ item.text }}
@@ -188,8 +191,8 @@ export default {
                 <div class="col">
                     <div class="card">
 
-                        <img :class="index === activeImage ? 'active' : ''" :src="images" alt="image" v-for="item in images"
-                            @click="changeImage(index)">
+                        <img :class="index === activeImage ? 'active' : ''" :src="item.image" alt="image"
+                            v-for="item in images" @click="changeImage(index)">
 
                         <div id="buttons">
 
@@ -205,29 +208,237 @@ export default {
 
 
     <section class="graphic">
-        <div class="row ">
-            <div class="col" v-for="item in graphics">
-                <div class="card text-center">
-                    <div class="number_graphic">{{ item.number }}</div>
-                    <div class="card-body">
-                        <h5 class="card-title">{{ item.title }}</h5>
-                        <p class="card-text">{{ item.text }}
-                        </p>
+        <div class="container m-auto">
+            <div class="row ">
+                <div class="col" v-for="item in graphics">
+                    <div class="card text-center">
+                        <div class="number_graphic card-img-top">{{ item.number }}</div>
+                        <div class="card-body graphic_body">
+                            <h5 class="card-title">{{ item.title }}</h5>
+                            <p class="card-text">{{ item.text }}
+                            </p>
 
+                        </div>
                     </div>
+
                 </div>
 
             </div>
 
         </div>
 
+
+    </section>
+
+    <section class="our_classes">
+        <div class="container m-auto">
+            <div class="row">
+                <div class="col text-center">
+                    <h2 class="header_title p-4">Our Classes</h2>
+                </div>
+
+            </div>
+            <div class="row p-2">
+                <div class="col text-center">
+                    <div class="title p-2">Our preschool program has four dedicated classes</div>
+                    <img src="fable/images/header_divider.png" alt="header_divider">
+                </div>
+            </div>
+            <div class="row m-auto">
+                <div class="col-6">
+                    <h4>We provided four classes with nine to twenty children each aged twelve month to five years of age.
+                    </h4>
+                </div>
+                <div class="col-6">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quam delectus culpa fugiat suscipit
+                        corrupti modi quisquam expedita, nam quos voluptatum ab libero rerum facilis repudiandae ex,
+                        repellendus, minus optio!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col_class d-flex m-2">
+                    <div class="d-flex flex-column flex-grow-1">
+                        <h6>Little Lambs</h6>
+                        <p>Class name</p>
+                        <div class="d-flex">
+                            <span class="p-1">
+                                <div>12-24</div>
+                                <div>Month olds</div>
+                            </span>
+                            <span class="size_class p-1">
+                                <div>9</div>
+                                <div>Class size</div>
+                            </span>
+                        </div>
+                    </div>
+                    <div><img class="img_classes" src="fable/images/gallery_04.jpg" alt=""></div>
+                </div>
+                <div class="col col_class d-flex m-2">
+                    <div class="d-flex flex-column flex-grow-1">
+                        <h6>Little Lambs</h6>
+                        <p>Class name</p>
+                        <div class="d-flex">
+                            <span class="p-1">
+                                <div>12-24</div>
+                                <div>Month olds</div>
+                            </span>
+                            <span class="size_class p-1">
+                                <div>9</div>
+                                <div>Class size</div>
+                            </span>
+                        </div>
+                    </div>
+                    <div><img class="img_classes" src="fable/images/class_02-690x506.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col_class d-flex m-2">
+                    <div class="d-flex flex-column flex-grow-1">
+                        <h6>Little Lambs</h6>
+                        <p>Class name</p>
+                        <div class="d-flex">
+                            <span class="p-1">
+                                <div>12-24</div>
+                                <div>Month olds</div>
+                            </span>
+                            <span class="size_class p-1">
+                                <div>9</div>
+                                <div>Class size</div>
+                            </span>
+                        </div>
+                    </div>
+                    <div><img class="img_classes" src="fable/images/class_03-690x506.jpg" alt=""></div>
+                </div>
+                <div class="col col_class d-flex m-2">
+                    <div class="d-flex flex-column flex-grow-1">
+                        <h6>Little Lambs</h6>
+                        <p>Class name</p>
+                        <div class="d-flex">
+                            <span class="p-1">
+                                <div>12-24</div>
+                                <div>Month olds</div>
+                            </span>
+                            <span class="size_class p-1">
+                                <div>9</div>
+                                <div>Class size</div>
+                            </span>
+                        </div>
+                    </div>
+                    <div><img class="img_classes" src="fable/images/class_04-690x506.jpg" alt=""></div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </section>
+
+
+    <section class="education">
+        <div class="container m-auto">
+            <div class="row">
+                <div class="col-6">
+                    <h4>We have been educating children for over fifteen years.Our goal is to create a place that engages
+                        each child.</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat debitis alias maxime consectetur
+                        aliquam esse sequi, placeat dolorem iste rerum iusto quasi fugit, quisquam aliquid veritatis? Hic
+                        sequi eius alias.</p>
+
+                    <ul>
+                        <li>Comprehensive reporting on individual achievement</li>
+                        <li>Educational field tripa and school presentations</li>
+                        <li>Individual attention in a small class setting</li>
+                        <li>Learning program with after-school care</li>
+                        <li>Opporyunities to carry out scientific investigations</li>
+                        <li>Positive learning environment for your child</li>
+                    </ul>
+                </div>
+                <div class="col d-flex ">
+                    <div class="col">
+                        <div class="card text-center d-flex justify-content-center align-items-center">
+                            <img src="fable/images/toy.png" class="card-img-top card_education" alt="toy">
+                            <div class="card-body">
+                                <h5 class="card-title">Learning & Fun</h5>
+                                <p class="card-text">lorem ipsum vida loca bla bla bla gears of war
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="card text-center d-flex justify-content-center align-items-center">
+                            <img src="fable/images/toy.png" class="card-img-top card_education" alt="toy">
+                            <div class="card-body">
+                                <h5 class="card-title">Learning & Fun</h5>
+                                <p class="card-text">lorem ipsum vida loca bla bla bla gears of war
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-center d-flex justify-content-center align-items-center">
+                            <img src="fable/images/toy.png" class="card-img-top d-flex card_education " alt="toy">
+                            <div class="card-body">
+                                <h5 class="card-title">Learning & Fun</h5>
+                                <p class="card-text">lorem ipsum vida loca bla bla bla gears of war
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="card text-center d-flex justify-content-center align-items-center">
+                            <img src="fable/images/toy.png" class="card-img-top card_education" alt="toy">
+                            <div class="card-body">
+                                <h5 class="card-title">Learning & Fun</h5>
+                                <p class="card-text">lorem ipsum vida loca bla bla bla gears of war
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="random_images d-flex">
+        <img class="rand_img" src="fable/images/gallery_01.jpg" alt="">
+        <img class="rand_img" src="fable/images/gallery_02.jpg" alt="">
+        <img class="rand_img" src="fable/images/gallery_03.jpg" alt="">
+        <img class="rand_img" src="fable/images/gallery_04.jpg" alt="">
+
+    </section>
+
+    <section class="view_gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col text-end">
+                    <h4 class="title_gallery">See our Kindergarten Photo Gallery!</h4>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center">
+                    <button class="gallery_button">VIEW GALLERY &#8811;</button>
+
+                </div>
+            </div>
+
+        </div>
     </section>
 </template>
 
 
 
 <style lang="scss" >
-h2 {
+h2,
+h4 {
     color: #554e9e;
 }
 
@@ -238,21 +449,12 @@ h2 {
 .card {
     border: none;
     margin: 1rem;
+    background-color: transparent !important;
 
 }
-
-.graphic {
-    background-image: url('fable/images/parallax_01.jpg');
-}
-
-.number_graphic {
-    border: 1px solid white;
-    border-radius: 50%;
-}
-
 
 //use child property!!!
-.card-img-top {
+.cardz {
     background-color: #fe6601;
     border-radius: 50%;
 }
@@ -264,5 +466,68 @@ h2 {
 
 .mission {
     color: #e8e6e7;
+}
+
+.graphic {
+    background-image: url('fable/images/parallax_01.jpg');
+}
+
+.number_graphic {
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 3rem;
+    padding: 3rem;
+    color: white;
+}
+
+.graphic_body {
+    color: white;
+}
+
+.col_class {
+
+    background-color: #554e9e;
+    color: white;
+}
+
+.size_class {
+
+    border-left: 1px solid white;
+}
+
+.img_classes {
+    height: 120px;
+    width: 100%;
+}
+
+.education {
+    background-color: #e8e6e7;
+}
+
+.card_education {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+
+.rand_img {
+    height: 280px
+}
+
+.view_gallery {
+    background-image: url('fable/images/pattern.png');
+}
+
+.title_gallery {
+    padding: 1rem;
+    color: white;
+}
+
+.gallery_button {
+    background-color: transparent;
+    color: white;
+    font-weight: bolder;
+    padding: 0.5rem;
+    border: 1px solid white;
 }
 </style>

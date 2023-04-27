@@ -22,7 +22,7 @@ export default {
                     <h4>How to Enroll Your Child to a Class?</h4>
                 </div>
                 <div class="col d-flex align-items-center justify-content-center">
-                    <a href="h"></a>
+
                     <img src="fable/hover-button2.png" alt="">
                 </div>
             </div>
