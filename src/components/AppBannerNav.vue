@@ -93,14 +93,31 @@ export default {
     padding: 0;
 }
 
+.col:hover {
+    padding: 0;
+    background-color: #fe6601;
+
+}
+
 .icon {
     height: 30px;
     width: 30px;
 
 }
 
+.icon:hover {
+    height: 30px;
+    width: 30px;
+    color: white;
+}
+
 span {
     padding-top: 10px;
     color: #554e9e;
+}
+
+span:hover {
+    padding-top: 10px;
+    color: white;
 }
 </style>

@@ -10,11 +10,11 @@ export default {
     <section class="jumbotron">
         <div class="container">
             <div class="row p-3 mb-3">
-                <div class="col text-center">
+                <div class="col ">
                     <h1>Learning & Fun</h1>
                 </div>
             </div>
-            <div class="row p-3 ">
+            <div class="row p-3 mt-3">
                 <div class="col-4">
 
 
@@ -37,7 +37,12 @@ h1 {
     color: rgb(169, 166, 166);
 }
 
+.row {
+    height: 100px;
+}
+
 .jumbotron {
+    height: 400px;
     background: linear-gradient(to bottom,
             lightblue 0%, transparent,
             white 50%, transparent,
