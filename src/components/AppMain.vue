@@ -156,7 +156,7 @@ export default {
                                 <img src="/fable/images/gallery_01.jpg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="'/fable/images/gallery_07-690x506.jpg'" class="d-block w-100" alt="...">
+                                <img src="'/public/fable/images/gallery_07-690x506.jpg'" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
                                 <img src="'/fable/images/gallery_08-690x506.jpg'" class="d-block w-100" alt="...">
