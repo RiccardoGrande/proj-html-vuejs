@@ -225,6 +225,7 @@ label {
 
 .img_footer {
     height: 60px;
+    margin-right: 1rem;
 }
 
 ul {
