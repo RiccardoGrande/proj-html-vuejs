@@ -206,4 +206,8 @@ label {
 .img_footer {
     height: 60px;
 }
+
+ul {
+    list-style-image: url('fable/images/style_1.png');
+}
 </style>

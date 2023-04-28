@@ -22,14 +22,14 @@ export default {
                 },
                 {
                     image: 'fable/images/globe_alt.png',
-                    title: 'Morbi Etos',
+                    title: 'Maecenas Node',
                     text: 'present interdum est gravida veicula esta noche estudas loaf morbius a dosid lucus nou est oresent.'
 
 
                 },
                 {
                     image: 'fable/images/bell_alt.png',
-                    title: 'Morbi Etos',
+                    title: 'Praesent Morbi',
                     text: 'present interdum est gravida veicula esta noche estudas loaf morbius a dosid lucus nou est oresent.'
 
 
@@ -114,7 +114,7 @@ export default {
     <section class="Overwiew_section">
         <div class="container m-auto">
             <div class="row d-flex">
-                <div class="col">
+                <div class="col p-2">
                     <div>
                         <span class="overwiew p-1">Overwiew</span>
                         <span class="mission p-1">Our mission</span>
@@ -156,10 +156,10 @@ export default {
                                 <img src="/fable/images/gallery_01.jpg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="'/public/fable/images/gallery_07-690x506.jpg'" class="d-block w-100" alt="...">
+                                <img src="/fable/images/gallery_07-690x506.jpg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="'/fable/images/gallery_08-690x506.jpg'" class="d-block w-100" alt="...">
+                                <img src="/fable/images/gallery_08-690x506.jpg" class="d-block w-100" alt="...">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -181,9 +181,9 @@ export default {
 
     <section class="graphic">
         <div class="container m-auto">
-            <div class="row ">
+            <div class="row p-3">
                 <div class="col" v-for="item in graphics">
-                    <div class="card text-center">
+                    <div class="card text-center d-flex justify-content-center align-items-center">
                         <div class="number_graphic card-img-top">{{ item.number }}</div>
                         <div class="card-body graphic_body">
                             <h5 class="card-title">{{ item.title }}</h5>
@@ -247,15 +247,15 @@ export default {
                 </div>
                 <div class="col col_class d-flex m-2">
                     <div class="d-flex flex-column flex-grow-1">
-                        <h6>Little Lambs</h6>
+                        <h6>Bouncy Bears</h6>
                         <p>Class name</p>
                         <div class="d-flex">
                             <span class="p-1">
-                                <div>12-24</div>
-                                <div>Month olds</div>
+                                <div>2-3</div>
+                                <div>Years olds</div>
                             </span>
                             <span class="size_class p-1">
-                                <div>9</div>
+                                <div>12</div>
                                 <div>Class size</div>
                             </span>
                         </div>
@@ -266,15 +266,15 @@ export default {
             <div class="row">
                 <div class="col col_class d-flex m-2">
                     <div class="d-flex flex-column flex-grow-1">
-                        <h6>Little Lambs</h6>
+                        <h6>Tenderhearts</h6>
                         <p>Class name</p>
                         <div class="d-flex">
                             <span class="p-1">
-                                <div>12-24</div>
-                                <div>Month olds</div>
+                                <div>3-4</div>
+                                <div>Years olds</div>
                             </span>
                             <span class="size_class p-1">
-                                <div>9</div>
+                                <div>15</div>
                                 <div>Class size</div>
                             </span>
                         </div>
@@ -283,15 +283,15 @@ export default {
                 </div>
                 <div class="col col_class d-flex m-2">
                     <div class="d-flex flex-column flex-grow-1">
-                        <h6>Little Lambs</h6>
+                        <h6>Shining stars</h6>
                         <p>Class name</p>
                         <div class="d-flex">
                             <span class="p-1">
-                                <div>12-24</div>
-                                <div>Month olds</div>
+                                <div>4-5</div>
+                                <div>Years olds</div>
                             </span>
                             <span class="size_class p-1">
-                                <div>9</div>
+                                <div>20</div>
                                 <div>Class size</div>
                             </span>
                         </div>
@@ -310,7 +310,7 @@ export default {
 
     <section class="education">
         <div class="container m-auto">
-            <div class="row">
+            <div class="row p-3">
                 <div class="col-6">
                     <h4>We have been educating children for over fifteen years.Our goal is to create a place that engages
                         each child.</h4>
@@ -341,7 +341,7 @@ export default {
                         <div class="card text-center d-flex justify-content-center align-items-center">
                             <img src="fable/images/toy.png" class="card-img-top card_education" alt="toy">
                             <div class="card-body">
-                                <h5 class="card-title">Learning & Fun</h5>
+                                <h5 class="card-title">Healty Meals</h5>
                                 <p class="card-text">lorem ipsum vida loca bla bla bla gears of war
                                 </p>
 
@@ -352,7 +352,7 @@ export default {
                         <div class="card text-center d-flex justify-content-center align-items-center">
                             <img src="fable/images/toy.png" class="card-img-top d-flex card_education " alt="toy">
                             <div class="card-body">
-                                <h5 class="card-title">Learning & Fun</h5>
+                                <h5 class="card-title">Friendly Place</h5>
                                 <p class="card-text">lorem ipsum vida loca bla bla bla gears of war
                                 </p>
 
@@ -361,7 +361,7 @@ export default {
                         <div class="card text-center d-flex justify-content-center align-items-center">
                             <img src="fable/images/toy.png" class="card-img-top card_education" alt="toy">
                             <div class="card-body">
-                                <h5 class="card-title">Learning & Fun</h5>
+                                <h5 class="card-title">Children Safety</h5>
                                 <p class="card-text">lorem ipsum vida loca bla bla bla gears of war
                                 </p>
 
@@ -410,8 +410,17 @@ export default {
 
 <style lang="scss" >
 h2,
-h4 {
+h4,
+h5 {
+    padding-top: 1rem;
+    font-weight: bolder;
     color: #554e9e;
+}
+
+
+h6 {
+    padding-top: 1rem;
+    font-weight: bolder;
 }
 
 .title {
@@ -460,7 +469,7 @@ h4 {
 
 .Overwiew_section {
     background-color: #e8e6e7;
-    padding: 1rem;
+    padding: 2rem;
 
 }
 
@@ -470,19 +479,24 @@ h4 {
 }
 
 .mission {
-    color: #e8e6e7;
+    color: #949494;
+    border: 1px solid rgb(173, 170, 170);
 }
 
 .graphic {
     background-image: url('fable/images/parallax_01.jpg');
+    background-position: center;
 }
 
 .number_graphic {
     border: 1px solid white;
     border-radius: 50%;
     font-size: 3rem;
-    padding: 3rem;
+    padding: 2rem;
     color: white;
+    width: 170px;
+
+
 }
 
 .graphic_body {
@@ -515,8 +529,12 @@ h4 {
     width: 80px;
 }
 
+ul {
+    list-style-image: url('fable/images/style_1.png');
+}
+
 .rand_img {
-    height: 280px
+    height: 278px
 }
 
 .view_gallery {
