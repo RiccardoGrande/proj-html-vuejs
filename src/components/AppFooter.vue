@@ -94,14 +94,14 @@ export default {
         <div class="container">
             <div class="row d-flex">
                 <div class="col">
-                    <h5>ABOUT US</h5>
+                    <h5 class="title_summary">ABOUT US</h5>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quaerat ipsum nulla libero id
                         odio, numquam itaque nobis adipisci aperiam, corrupti voluptatibus quibusdam. Ad fugit aperiam
                         itaque reprehenderit facilis ex?</p>
                     <img class="img_footer" src="fable/images/logo_footer.png" alt="logo_footer">
                 </div>
                 <div class="col">
-                    <h5>ARCHIVES</h5>
+                    <h5 class="title_summary">ARCHIVES</h5>
                     <label for="validationServer01" class="form-label p-1">OCTOBER 2014 (2)</label>
                     <label for="validationServer01" class="form-label p-1">OCTOBER 2014 (2)</label>
                     <label for="validationServer01" class="form-label p-1">OCTOBER 2014 (2)</label>
@@ -110,7 +110,7 @@ export default {
                     <label for="validationServer01" class="form-label p-1">OCTOBER 2014 (2)</label>
                 </div>
                 <div class="col">
-                    <h5>OUR FEATURES</h5>
+                    <h5 class="title_summary">OUR FEATURES</h5>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus ex quaerat incidunt, fuga quam,
                         delectus sint perferendis ipsa doloribus dignissimos rem quasi officia labore! Atque animi sed
                         molestiae perferendis eaque.</p>
@@ -124,26 +124,26 @@ export default {
                     </ul>
                 </div>
                 <div class="col">
-                    <h5>RECENT POSTS</h5>
-                    <div class="d-flex align-items-center">
-                        <div> <img class="img_footer" src="fable/images/gallery_03-690x506.jpg" alt=""></div>
+                    <h5 class="title_summary">RECENT POSTS</h5>
+                    <div class="d-flex align-items-center p-2">
+                        <div> <img class="img_footer" src="fable/images/blog_09-150x150.jpg" alt=""></div>
                         <div>
-                            <div>Drawing and painting lessons</div>
+                            <div class="bold">Drawing and painting lessons</div>
                             <div>&#128197; October 03 2014</div>
                         </div>
                     </div>
-                    <div class="d-flex align-items-center">
-                        <div> <img class="img_footer" src="fable/images/gallery_03-690x506.jpg" alt=""></div>
+                    <div class="d-flex align-items-center p-2">
+                        <div> <img class="img_footer" src="fable/images/blog_10-150x150.jpg" alt=""></div>
                         <div>
-                            <div>Drawing and painting lessons</div>
+                            <div class="bold">Fall parents meeting day</div>
                             <div>&#128197; October 03 2014</div>
                         </div>
                     </div>
-                    <div class="d-flex align-items-center">
-                        <div> <img class="img_footer" src="fable/images/gallery_03-690x506.jpg" alt=""></div>
+                    <div class="d-flex align-items-center p-2">
+                        <div> <img class="img_footer" src="fable/images/blog_08-150x150.jpg" alt=""></div>
                         <div>
-                            <div>Drawing and painting lessons</div>
-                            <div>&#128197; October 03 2014</div>
+                            <div class="bold">Birthday in kindergarten</div>
+                            <div>&#128197; September 20 2014</div>
                         </div>
                     </div>
 
@@ -179,6 +179,22 @@ h2 {
     color: #554e9e;
 }
 
+.title_summary {
+    padding: 2rem;
+    color: white;
+    border-bottom: 1px solid white;
+
+}
+
+.bold {
+    font-weight: bold;
+
+}
+
+.contacts {
+    padding: 2rem;
+}
+
 .img_contacts {
     height: 30px;
     width: 30px;
@@ -194,6 +210,8 @@ h2 {
 .summary {
     background-image: url('fable/images/pattern.png');
     color: white;
+    padding-bottom: 3rem;
+
 }
 
 label {
