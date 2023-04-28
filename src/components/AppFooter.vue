@@ -104,11 +104,11 @@ export default {
                 <div class="col">
                     <h5 class="title_summary">ARCHIVES</h5>
                     <label for="validationServer01" class="form-label p-1">OCTOBER 2014 (2)</label>
-                    <label for="validationServer01" class="form-label p-1">OCTOBER 2014 (2)</label>
-                    <label for="validationServer01" class="form-label p-1">OCTOBER 2014 (2)</label>
-                    <label for="validationServer01" class="form-label p-1">OCTOBER 2014 (2)</label>
-                    <label for="validationServer01" class="form-label p-1">OCTOBER 2014 (2)</label>
-                    <label for="validationServer01" class="form-label p-1">OCTOBER 2014 (2)</label>
+                    <label for="validationServer01" class="form-label p-1">SEPTEMBER 2014 (2)</label>
+                    <label for="validationServer01" class="form-label p-1">AUGUST 2014 (2)</label>
+                    <label for="validationServer01" class="form-label p-1">JULY 2014 (2)</label>
+                    <label for="validationServer01" class="form-label p-1">JUNE 2014 (2)</label>
+                    <label for="validationServer01" class="form-label p-1">MAY 2014 (2)</label>
                 </div>
                 <div class="col">
                     <h5 class="title_summary">OUR FEATURES</h5>
@@ -184,6 +184,7 @@ h2 {
     padding: 2rem;
     color: white;
     border-bottom: 1px solid white;
+    margin-bottom: 2REM;
 
 }
 
