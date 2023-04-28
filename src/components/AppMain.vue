@@ -67,49 +67,10 @@ export default {
                 }
 
 
-            ],
-            activeImage: 0,
-            images: {
-                image: ['/fable/images/gallery_01.jpg',
-                    '/fable/images/gallery_07.jpg',
-                    '/fable/images/gallery_08.jpg'],
-
-            }
+            ]
 
         }
 
-    },
-    methods: {
-
-
-        next() {
-            console.log(this.images)
-            this.activeImage++
-            if (activeImage > images.length - 1) {
-
-                activeImage = 0;
-            }
-
-
-            console.log(this.images)
-        },
-        prev() {
-
-            console.log(this.images)
-
-            this.activeImage--
-            if (activeImage < 0) {
-
-                activeImage = 4;
-            }
-
-
-        },
-        changeImage(index) {
-
-            this.activeImage = index
-
-        }
     }
 
 }
@@ -189,17 +150,28 @@ export default {
 
                 </div>
                 <div class="col">
-                    <div class="card">
-
-                        <img :class="index === activeImage ? 'active' : ''" :src="item.image" alt="image"
-                            v-for="item in images" @click="changeImage(index)">
-
-                        <div id="buttons">
-
-                            <button @click="prev">Prev</button>
-                            <button @click="next">Next</button>
-
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/fable/images/gallery_01.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="'/fable/images/gallery_07-690x506.jpg'" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="'/fable/images/gallery_08-690x506.jpg'" class="d-block w-100" alt="...">
+                            </div>
                         </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -483,6 +455,12 @@ h4 {
     border-radius: 50%;
     height: 80px;
     width: 80px;
+
+}
+
+.Overwiew_section {
+    background-color: #e8e6e7;
+    padding: 1rem;
 
 }
 
