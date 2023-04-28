@@ -21,14 +21,14 @@ export default {
                     <img src="fable/images/header_divider.png" alt="header_divider">
                 </div>
             </div>
-            <div class="row">
-                <div class="col d-flex ">
+            <div class="row p-2">
+                <div class="col d-flex justify-content-center align-items-center ">
 
                     <div class="card text-center d-flex justify-content-center align-items-center">
                         <img src="fable/images/envelope (1).png" class="card-img-top img_contacts" alt="toy">
                         <div class="card-body">
-                            <h5 class="card-title">Learning & Fun</h5>
-                            <p class="card-text">lorem ipsum vida loca bla bla bla gears of war
+                            <h5 class="card-title">Postal Address</h5>
+                            <p class="card-text">Fable Care center <br> 85 Fentiman ave <br> Ottawa,ON K1S 0T7
                             </p>
 
                         </div>
@@ -36,8 +36,8 @@ export default {
                     <div class="card text-center d-flex justify-content-center align-items-center">
                         <img src="fable/images/mobile.png" class="card-img-top img_contacts" alt="toy">
                         <div class="card-body">
-                            <h5 class="card-title">Learning & Fun</h5>
-                            <p class="card-text">lorem ipsum vida loca bla bla bla gears of war
+                            <h5 class="card-title">Phone & Mail</h5>
+                            <p class="card-text">Phone: 1-800-64-38 <br> Fax: 1-800-64-39 <br> Office@fable.com
                             </p>
 
                         </div>
@@ -47,8 +47,8 @@ export default {
                     <div class="card text-center d-flex justify-content-center align-items-center">
                         <img src="fable/images/clock.png" class="card-img-top  img_contacts " alt="toy">
                         <div class="card-body">
-                            <h5 class="card-title">Learning & Fun</h5>
-                            <p class="card-text">lorem ipsum vida loca bla bla bla gears of war
+                            <h5 class="card-title">Business Hours</h5>
+                            <p class="card-text">Monday-Friday <br> 8:00 am - 5:00 pm <br> Weekend Closed
                             </p>
 
                         </div>
@@ -56,8 +56,9 @@ export default {
                     <div class="card text-center d-flex justify-content-center align-items-center">
                         <img src="fable/images/document (1).png" class="card-img-top img_contacts" alt="toy">
                         <div class="card-body">
-                            <h5 class="card-title">Learning & Fun</h5>
-                            <p class="card-text">lorem ipsum vida loca bla bla bla gears of war
+                            <h5 class="card-title">Sessions</h5>
+                            <p class="card-text">Mornings,8 am - 12 noon <br> Afternoons, 1 pm - 5pm <br> Full Day 8 am - 5
+                                pm
                             </p>
 
                         </div>
