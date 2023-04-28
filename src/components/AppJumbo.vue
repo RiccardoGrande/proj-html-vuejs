@@ -35,10 +35,12 @@ export default {
 h1 {
     font-family: 'Shadows Into Light', cursive;
     color: rgb(169, 166, 166);
+    padding-top: 100px;
+    font-size: 2rem;
 }
 
 .row {
-    height: 100px;
+    height: 160px;
 }
 
 .jumbotron {

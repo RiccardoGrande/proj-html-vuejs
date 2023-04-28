@@ -121,7 +121,7 @@ export default {
         <div class="container m-auto">
             <div class="row">
                 <div class="col text-center">
-                    <h2 class="header_title p-4">Welcome to Fable</h2>
+                    <h2 class="header_title p-2">Welcome to Fable</h2>
                 </div>
 
             </div>
@@ -132,8 +132,8 @@ export default {
                 </div>
             </div>
             <div class="row ">
-                <div class="col" v-for="item in cards">
-                    <div class="card text-center">
+                <div class="col d-flex align-items-center justify-content-center" v-for="item in cards">
+                    <div class="card d-flex align-items-center justify-content-center text-center">
                         <img :src="item.image" class="card-img-top cardz" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">{{ item.title }}</h5>
@@ -454,9 +454,36 @@ h4 {
 }
 
 //use child property!!!
-.cardz {
+.cardz:nth-child(1) {
     background-color: #fe6601;
     border-radius: 50%;
+    height: 80px;
+    width: 80px;
+
+}
+
+.cardz:nth-child(3) {
+    background-color: #fe6601;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+
+}
+
+.cardz:nth-child(2) {
+    background-color: #554e9e;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+
+}
+
+.cardz:nth-child(4) {
+    background-color: #554e9e;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+
 }
 
 .overwiew {
